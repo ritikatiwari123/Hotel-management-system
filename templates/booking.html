@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE>
+<html>
+  <html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>BOOKING</title>
+
+<link rel="stylesheet"  href={% static 'css/booking.css' %}>
+</head>
+<body>
+  <div class="topnav">
+    <a class="active" href="home">Home</a>
+    <a href="booking">Booking</a>
+    <a href="contact">Contact Us</a>
+    <a href="about">About</a>
+    <a href="Sign in">Sign In</a>
+  </div>
+  <div class="container">
+    <form action="", method='POST'>
+      
+      <div class="row">
+        <div class="col-25">
+          <label for="room_category">Room_category</label>
+        </div>
+        <div class="col-75">
+          <select id="room_category" name="room_category">
+            <option value="AC">AC</option>
+            <option value="NON-AC">NON AC</option>
+            <option value="KING">KING</option>
+            <option value="QUEEN">QUEEN</option>
+            <option value="DELUXE">DELUXE</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="check_in">Check_In</label>
+        </div>
+        <div class="col-75">
+          <input type="date" id="Check_In" name="Check_In" placeholder="Write something.." style="height:200px">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="check_out">Check_OUT</label>
+        </div>
+        <div class="col-75">
+          <input type="date" id="Check_out" name="Check_out" placeholder="Write something.." style="height:200px">
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Check_availability">
+      </div>
+    </form>
+  </div>
+
+  <div class="footer">
+    <p>Author: Hege Refsnes<br>
+    <a href="mailto:hege@example.com">hege@example.com</a></p>
+  </div>
+</body>
+</html>  
