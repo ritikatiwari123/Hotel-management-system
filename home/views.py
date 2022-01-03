@@ -1,7 +1,7 @@
 from django.http.response import HttpResponse
 from django.shortcuts import render, HttpResponse
 from datetime import datetime
-from home.models import Contact
+from home.models import Contact, Room
 from django.contrib import messages
 from home.availability import logic
 
@@ -36,6 +36,7 @@ def booking(request):
           check_in = request.POST.get('check_in')
           check_in = request.POST.get('check_in')
           def form_valid(self, booking):
+              return self.room_category
                
      
     # return HttpResponse ("hello world this is my booking page") 

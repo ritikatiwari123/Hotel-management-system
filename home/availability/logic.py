@@ -1,5 +1,5 @@
 import datetime
-from home import Room, Booking
+from home.models import Room, Booking
 
 def check_availablity(room, check_in, check_out):
     avail_list = []
